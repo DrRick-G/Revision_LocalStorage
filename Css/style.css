@@ -4,70 +4,89 @@
 }
 
 body{
-    background:#777;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align:center;
+    background: url('../Img/3506328.jpg') no-repeat top center;
 }
 
 a{
-    text-decoration:none;
-     
+    text-decoration:none;   
 }
 
 li{
     list-style-type: none;
 }
 
-h1{
-    font-size:40px;
+ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+
+ul li a{
     font-weight:bold;
+    color:#555;
+}
+
+h1{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.header{
+    text-align:center;
+    background-color:white;
+    display:flex;
+    margin-top: 10px;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+}
+
+.content{
+    display:flex;
+    flex-direction:column;
+}
+
+.ecran1, .ecran2, .ecran3{
+    text-align:center;
+    height:300px;
+    width:300px;
+    background: rgba(228, 186, 2, 0.5);
+    margin:20px;
+    padding-top: 20px;
+}
+.part1, .part2{
+    display:flex;
     
+}
+
+.ecran{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.ecran button{
+    width:200px;
+    height:30px;
+    background-color: #777;
+    margin-top:10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.ecran button:hover{
+    color:#fff;
+}
+
+.ecran1:hover{
+    opacity: 0.5;
 }
 
 /* PAGE D'ACCUEIL*/
-
-.accueil{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.accueil ul li{
-    margin:100px 50px;
-    display: inline-block;
-    width: 300px;
-    background-color:white;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 300px;
-    box-shadow: 5px 5px 12px #555;
-    
-}
-.accueil ul li:hover{
-    opacity: 0.9;
-}
-
-.accueil ul li a{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color:teal;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 2px;
-    box-shadow: 0px 5px 10px #555;
-}
-.accueil ul li a:hover{
-    background-color:rgb(4, 49, 49);
-}
-
-.div-1{
-    background:url(../Img/user-plus-solid.svg) no-repeat top center;
-}
-.div-2{
-    background:url(../Img/sign-in-alt-solid.svg) no-repeat top center;
-}
 
 .title_acceuil{
     text-transform: uppercase;
@@ -82,12 +101,16 @@ h1{
 
 /* PAGE D'INSCRIPTION*/
 
+
+
+
 .form-inscription{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin-top: 100px;
+    background-color:#777;
    
 }
 
