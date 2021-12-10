@@ -1,0 +1,201 @@
+/* GENERAL*/
+*{
+    margin: 0;
+}
+
+body{
+    background:#777;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+a{
+    text-decoration:none;
+     
+}
+
+li{
+    list-style-type: none;
+}
+
+h1{
+    font-size:40px;
+    font-weight:bold;
+    
+}
+
+/* PAGE D'ACCUEIL*/
+
+.accueil{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil ul li{
+    margin:100px 50px;
+    display: inline-block;
+    width: 300px;
+    background-color:white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 300px;
+    box-shadow: 5px 5px 12px #555;
+    
+}
+.accueil ul li:hover{
+    opacity: 0.9;
+}
+
+.accueil ul li a{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:teal;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-shadow: 0px 5px 10px #555;
+}
+.accueil ul li a:hover{
+    background-color:rgb(4, 49, 49);
+}
+
+.div-1{
+    background:url(../Img/user-plus-solid.svg) no-repeat top center;
+}
+.div-2{
+    background:url(../Img/sign-in-alt-solid.svg) no-repeat top center;
+}
+
+.title_acceuil{
+    text-transform: uppercase;
+    padding:10px;
+    background-color: teal;
+    color: white;
+    width:900px;
+    margin: 20px auto;
+    cursor:default;
+    box-shadow: 5px 5px 12px #555;
+}
+
+/* PAGE D'INSCRIPTION*/
+
+.form-inscription{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+   
+}
+
+.form-inscription input[type=text], .form-inscription input[type=password]{ 
+    width:400px;
+    height:30px;
+    outline:none;
+    border-radius: 3px;
+    border:none;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:20px;
+    
+}
+.form-inscription input[type=submit]{
+    width:300px;
+    height:40px;
+    border-radius: 3px;
+    border:none;
+    background-color: teal;
+    font-size :20px;
+    color: white;
+    box-shadow: 1px 1px 12px #555;
+}
+
+.form-inscription input[type=submit]:hover{
+    background-color:rgb(4, 49, 49);
+}
+
+.form-inscription label{
+    text-transform: uppercase;
+    font-size:20px;
+    font-weight: bold;
+    display: none;
+}
+.title-inscription{
+    text-transform: uppercase;
+    padding:10px;
+    background-color: teal;
+    color: white;
+    width:900px;
+    margin: 20px auto;
+    cursor:default;
+    box-shadow: 5px 5px 12px #555;
+}
+.form-inscription .icon{
+    height: 100px;
+    width:100px;
+    background: url("../Img/user-plus-solid.svg") no-repeat top center;
+}
+
+/* PAGE DE CONNEXION*/
+.form-connexion{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    
+   
+}
+
+.form-connexion input[type=text], .form-connexion input[type=password]{ 
+    width:400px;
+    height:30px;
+    outline:none;
+    border-radius: 3px;
+    border:none;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:20px;
+    
+}
+.form-connexion input[type=submit]{
+    width:300px;
+    height:40px;
+    border-radius: 3px;
+    border:none;
+    background-color: teal;
+    font-size :20px;
+    color: white;
+    box-shadow: 1px 1px 12px #555;
+}
+
+.form-connexion input[type=submit]:hover{
+    background-color:rgb(4, 49, 49);
+}
+
+.form-connexion label{
+    text-transform: uppercase;
+    font-size:20px;
+    font-weight: bold;
+    display: none;
+}
+.title-connexion{
+    text-transform: uppercase;
+    padding:10px;
+    background-color: teal;
+    color: white;
+    width:900px;
+    margin: 20px auto;
+    cursor:default;
+    box-shadow: 5px 5px 12px #555;
+}
+
+.form-connexion .icon{
+    height: 100px;
+    width:100px;
+    background: url("../Img/sign-in-alt-solid.svg") no-repeat top center;
+}
+
