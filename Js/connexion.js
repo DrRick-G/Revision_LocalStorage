@@ -12,13 +12,12 @@ myForm.addEventListener('submit',function(e){
     let bool;
     local.forEach(element =>{
         if(pseudo == element.Pseudo && passe == element.Mdp){
-            bool = "Connexion réussie !";
-            location.href=""
+            bool = "Vous allez être redirigé vers votre espace utilisateur!";
+            location.href="espace.html";
         } else if (pseudo != element.Pseudo || passe != element.Mdp){
             bool = "Mot de passe ou Identifiant incorrect";
         }
     })
-
     alert(bool);
  });
  

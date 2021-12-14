@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espace de l'utilisateur</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <title>Espace utilisateur</title>
 </head>
 <body>
+    <div class="content">
+        <div class="header">
+            <div class="logo">
+                <img src="../Img/depositphotos_197246770-stock-illustration-logo-swoosh-global-red-letter.jpeg" alt="" style="width: 100px;">
+            </div>
+            <div class="texte">
+                <h1>Bienvenue sur ton espace: <span id="span"></span></h1>
+            </div>
+            <div class="liens">
+                <ul>
+                    <li><a href="accueil.html">Se déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ecran">
+                <div class="part1">
+                    <div class="ecran1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate ipsa vero itaque accusamus consectetur quae nemo sequi, accusantium laboriosam! Eligendi quibusdam alias odit laborum nisi molestiae enim! Libero, voluptas?
+                        Maiores ratione optio eum velit dolorem perspiciatis reiciendis earum rerum suscipit cumque voluptates aut omnis modi, reprehenderit saepe atque nam? Maxime expedita amet, explicabo doloremque sint commodi dignissimos nam est? <br>
+                        <button type="submit">Link</button>
+                    </div>
+                    <div class="ecran2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate ipsa vero itaque accusamus consectetur quae nemo sequi, accusantium laboriosam! Eligendi quibusdam alias odit laborum nisi molestiae enim! Libero, voluptas?
+                        Maiores ratione optio eum velit dolorem perspiciatis reiciendis earum rerum suscipit cumque voluptates aut omnis modi, reprehenderit saepe atque nam? Maxime expedita amet, explicabo doloremque sint commodi dignissimos nam est? <br>
+                        <button type="submit">Link</button>
+                    </div>
+                    <div class="ecran2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate ipsa vero itaque accusamus consectetur quae nemo sequi, accusantium laboriosam! Eligendi quibusdam alias odit laborum nisi molestiae enim! Libero, voluptas?
+                        Maiores ratione optio eum velit dolorem perspiciatis reiciendis earum rerum suscipit cumque voluptates aut omnis modi, reprehenderit saepe atque nam? Maxime expedita amet, explicabo doloremque sint commodi dignissimos nam est? <br>
+                        <button type="submit">Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Derrick Gnaba</h1> 
+            <div class="copyright">
+                Copyright © Tous droits réservés.
+            </div>
+        </div>
+    </div>
+
     
 </body>
+<script>
+    let user = document.getElementById('span');
+    let local = JSON.parse(localStorage.getItem("form"));
+    let element;
+    for (let i = 0; i < local.length; i++) {
+        element = local[i].Pseudo
+    }
+    span.innerHTML=element;
+    span.style.color='rgba(228, 186, 2)';
+
+</script>
 </html>
